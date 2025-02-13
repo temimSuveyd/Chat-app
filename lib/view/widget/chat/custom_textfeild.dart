@@ -33,13 +33,14 @@ class textField extends StatelessWidget {
           onTap: () {
             onTap();
           },
+    
           maxLines: 10,
           minLines: 1,
           enabled: enabled,
           controller: controller,
           keyboardType: keyboardType,
           validator: validator,
-          style: AppTextStyle.ragular12_20,
+          style: AppTextStyle.ragular12_20.copyWith(color: AppColor.text_quarterary),
           decoration: InputDecoration(
             prefixIcon: IconButton(
                 onPressed: () {
@@ -51,6 +52,7 @@ class textField extends StatelessWidget {
             hintText: hintText,
             hintStyle: AppTextStyle.ragular12_20
                 .copyWith(color: AppColor.text_quarterary),
+              
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
                 borderSide: BorderSide.none),
